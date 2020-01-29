@@ -1,0 +1,53 @@
+﻿
+@{
+    var num1 = 4;
+    var num2 = 3;
+    var num3 = 21;
+    var resta = num1 - num2;
+    var suma = num1 + num2;
+    var multi = num1 * num2;
+    var division = num3 / num1;
+}
+@{
+    ViewBag.Title = "ejer1";
+
+
+
+
+
+    @* Título de la página *@
+
+
+    @Html.ActionLink("Index", "Index")
+
+}
+<html>
+<head>
+</head>
+<body>
+
+    <h2>ESTEFANIAAAAAAA</h2>
+    <h1> @ViewBag.Mensaje</h1>
+    <div>
+        <p>
+            <span>
+                @if (true)
+                {
+                    @:La Fecha y hora es: @DateTime.Now
+                }
+                else
+                {
+                    @:Aquí no se debería acceder nunca
+                }
+            </span>
+        </p>
+        <p>La resta de @num1 - @num2 es: (@resta) </p>
+        <p>La suma de @num1 + @num2 es: (@suma) </p>
+        <p>La multiplicacion de @num1 * @num2 es: (@multi) </p>
+        <p>La devision de @num3 / @num1 es: (@division) en su parte entera y el resto es(1)</p>
+
+    </div>
+
+</body>
+</html>
+

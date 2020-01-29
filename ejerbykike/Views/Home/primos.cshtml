@@ -1,0 +1,56 @@
+﻿
+@{
+    ViewBag.Title = "primos";
+}
+@model IList<int>
+<h2>primos</h2>
+@Html.ActionLink("Index", "Index")
+<html>
+<head>
+    <title>Numeros primos</title>
+</head>
+<body>
+    <style type="text/css">
+        body {
+            background-color: aquamarine;
+            font-family: 'Comic Sans MS';
+            margin: 50px;
+        }
+
+        form {
+            padding: 10px;
+            border-style: solid;
+            width: 250px;
+        }
+    </style>
+
+    <p>Mete dos numeros para ver los primos que puede haber entre uno y otro</p>
+
+    <form action="" method="post">
+        <p>
+            <label for="text1">Desde el numero:</label>
+            <input type="text" name="text1" />
+        </p>
+
+
+        <p>
+            <label for="text2">Hasta el numero:</label>
+            <input type="text" name="text2" />
+        </p>
+        <p><input type="submit" value="Buscar" /></p>
+    </form>
+
+    <h3>Numeros primos encontrados</h3>
+
+    <ul>
+        @foreach (var primitos in Model)
+        {
+            <text>--></text> @primitos
+        }
+    </ul>
+
+</body>
+
+
+</html>
+

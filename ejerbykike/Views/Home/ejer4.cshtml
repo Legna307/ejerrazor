@@ -1,0 +1,40 @@
+﻿
+
+
+@{
+    ViewBag.Title = "ejer4";
+
+    @Html.ActionLink("Index", "Index")
+
+    string titulo = "ESTEFANIAAAAA";
+    int dia = DateTime.Now.Day;
+    int mes = DateTime.Now.Month;
+    int año = DateTime.Now.Year;
+
+    DateTime thisDay = DateTime.Now;
+
+
+}
+
+<h2>ejer4</h2>
+
+<!Doctype html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>
+        INDEX
+    </title>
+</head>
+<body>
+    <div>
+        <h1>@titulo</h1>
+        <p>Hoy es: @dia de @mes del @año</p>
+        <p>
+            Hoy es @string.Format("{0:M}", thisDay) del @string.Format("{0:yyyy}", thisDay)
+        </p>
+
+    </div>
+</body>
+</html>
+

@@ -1,0 +1,60 @@
+﻿
+
+
+@{
+    ViewBag.Title = "ejer2";
+
+    @Html.ActionLink("Index", "Index")
+
+    var num1 = 3;
+    var num2 = 4;
+    var num3 = 7;
+
+    string cadena1;
+    if (num1 < num2)
+    {
+        cadena1 = "True";
+    }
+    else
+    {
+        cadena1 = "False";
+    }
+    string cadena2;
+    if (num1 > num2)
+    {
+        cadena2 = "True";
+    }
+    else
+    {
+        cadena2 = "False";
+    }
+    string cadena3;
+    if (num1 == num1)
+    {
+        cadena3 = "True";
+    }
+    else
+    {
+        cadena3 = "False";
+    }
+
+    string cadena4;
+    if (num1 != num3)
+    {
+        cadena4 = "True";
+    }
+    else
+    {
+        cadena4 = "False";
+    }
+
+
+}
+
+<h2>ejer2</h2>
+<p>El numero @num1 es menor que @num2 ....? (@cadena1) </p>
+<p>El numero @num1 es mayor que @num2 ....? (@cadena2) </p>
+<p>El numero @num1 es igual que @num1 ....? (@cadena3) </p>
+<p>El numero @num1 es distinto de @num3 ....? (@cadena4) </p>
+
+
